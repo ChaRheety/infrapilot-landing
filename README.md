@@ -12,16 +12,16 @@ A dynamic landing page built to showcase my cloud infrastructure and DevOps skil
 
 ---
 
-## 👨🏽‍💻 About Me
+👨🏽‍💻 About Me
 
 **Charity Audu**  
-** Cloud and Automation Engineer**
+Cloud and Automation Engineer
 
 Cloud & DevOps enthusiast with hands-on experience in AWS, Nginx, server automation, and secure deployments. I hold an MSc in Software Engineering and enjoy solving real-world problems with scalable infrastructure.
 
 ---
 
-## 🧱 Tech Stack
+🧱 Tech Stack
 
 - **AWS EC2** – Server provisioning
 - **Ubuntu 22.04** – Base operating system
@@ -32,21 +32,21 @@ Cloud & DevOps enthusiast with hands-on experience in AWS, Nginx, server automat
 
 ---
 
-## ⚙️ Deployment Steps
+⚙️ Deployment Steps
 
 ### 1. **Provisioning Server**
 - AWS EC2 instance created
 - Ubuntu 22.04 installed
 - Security groups opened for ports 22 (SSH), 80 (HTTP), 443 (HTTPS)
 
-### 2. **Web Server Setup**
+2. **Web Server Setup**
 - Installed Nginx:
   ```bash
   sudo apt update
   sudo apt install nginx
 Default web root: /var/www/html
 
-###3. SSL (HTTPS) Setup
+3. SSL (HTTPS) Setup
 Installed Certbot:
 
 bash
@@ -55,7 +55,6 @@ Edit
 sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d infrapilot.xyz
 
-###4. Project Deployment
+4. Project Deployment
 Files uploaded via SCP
-
 Nginx auto-reloaded after certbot configuration
