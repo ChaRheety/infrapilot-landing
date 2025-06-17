@@ -15,7 +15,7 @@ A dynamic landing page built to showcase my cloud infrastructure and DevOps skil
 ## 👨🏽‍💻 About Me
 
 **Charity Audu**  
-**Lead Cloud Engineer**
+** Cloud and Automation Engineer**
 
 Cloud & DevOps enthusiast with hands-on experience in AWS, Nginx, server automation, and secure deployments. I hold an MSc in Software Engineering and enjoy solving real-world problems with scalable infrastructure.
 
@@ -44,3 +44,18 @@ Cloud & DevOps enthusiast with hands-on experience in AWS, Nginx, server automat
   ```bash
   sudo apt update
   sudo apt install nginx
+Default web root: /var/www/html
+
+###3. SSL (HTTPS) Setup
+Installed Certbot:
+
+bash
+Copy
+Edit
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d infrapilot.xyz
+
+###4. Project Deployment
+Files uploaded via SCP
+
+Nginx auto-reloaded after certbot configuration
